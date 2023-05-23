@@ -16,6 +16,12 @@
     font-family: Roboto-Light;
     src: url(/fontes/Roboto-Light.ttf);
 }
+@font-face {
+    font-family: RobotoSlab-Light;
+    src: url(/fontes/RobotoSlab-Light.ttf);
+}
+
+
 
 .main {
     width: 100vw;
@@ -25,6 +31,7 @@
 
     background-image: url(/image/home/background-home-desktop.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 a {
@@ -82,4 +89,52 @@ a {
 }
 .nav-list > li:hover {
     border-bottom: 3px solid white;
+}
+
+
+
+
+.conteiner-text-explore {
+    display: flex;
+    justify-content: space-around;
+
+    font-family: RobotoSlab-Light;
+    font-weight: 300;
+
+    padding-top: 150px;
+
+}
+
+.text {
+    width: 400px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    font-size: 1.5rem;
+
+    color: white;
+}
+
+.text > h2 {
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+.text > h1 {
+    font-size: 6rem;
+    letter-spacing: 15px;
+}
+.text > p {
+    font-size: 1rem;
+}
+
+.text-explode > h1 {
+    margin-top: 70px;
+
+    padding: 80px 30px ;
+
+    background-color: white;
+    border-radius: 100px;
 }
