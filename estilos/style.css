@@ -174,11 +174,14 @@ a {
 .title-destination h1 {
     font-size: 1.5rem;
 }
+.num-color {
+    color: grey;
+}
 
 .planet-destination {
     height: 800px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .planet-destination img {
@@ -186,46 +189,54 @@ a {
     height: 350px;
 
     margin-top: 70px;
+    margin-left: 100px;
 }
 
 .descrition-conteiner {
     display: flex;
     flex-direction: column;
+
 }
 
 .destination-list {
     display: flex;
 
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 0px 0px;
 }
 
-.destination-list li {
-    padding: 10px 10px;
+.destination-list button {
+    padding: 10px 0px;
 
-    margin: 5px 5px;
+    background-color: transparent;
+    color: white;
+    border: none;
+
+    font-family: Roboto-Light;
+
+    margin-right: 20px;
 
     font-size: 15px;
 
     cursor: pointer;
 }
-.destination-list li:hover {
+.destination-list button:hover {
     border-bottom: 2px solid white;
 }
 
 
 
-.slid-descrition-first {
+.slide-descrition{
     width: 420px;
     height: 400px;
 
     font-family: Roboto-Light;
 }
-.slid-descrition-first h1 {
+.slide-descrition h1 {
     font-size: 5rem;
 
+    margin-left: 10px;
     padding: 30px 5px;
 }
-
 
 
 .travel-item-conteiner {
@@ -233,6 +244,7 @@ a {
 
     border-top: 1px solid rgba(255, 255, 255, 0.158);
     margin-top: 20px;
+
     padding-top: 20px;
 }
 .travel-item-conteiner h2 {
