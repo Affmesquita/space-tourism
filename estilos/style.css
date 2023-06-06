@@ -21,6 +21,14 @@
     font-family: Optima;
     src: url(/fontes/OptimaNovaLTProLightCond.otf);
 }
+@font-face {
+    font-family: RobotoSlab-Light;
+    src: url(/fontes/RobotoSlab-Light.ttf);
+}
+@font-face {
+    font-family: Lora;
+    src: url(/fontes/Lora.zip);
+}
 
 
 
@@ -253,4 +261,75 @@ a {
 }
 .distance {
     margin-right: 50px;
+}
+
+
+
+/*** CREW  ***/
+
+.main-crew {
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+
+    padding-top: 30px;
+
+    background-image: url(/image/crew/background-crew-desktop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.title-crew {
+    font-size: .5rem;
+
+    font-family: Roboto-Light;
+}
+
+.crew-conteiner {
+    width: 900px;
+    height: 600px;
+
+    padding: 70px 155px;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.crew-information {
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.crew-information h1 {
+    font-size: 3rem;
+
+    font-family: Lora;
+    font-weight: lighter;
+}
+.crew-information h2 {
+    font-size: 1.5rem;
+
+    color: grey;
+
+    font-family: Lora;
+    font-weight: lighter;
+}
+.crew-information p {
+    width: 450px;
+    
+    font-family: Roboto-Light;
+    font-size: 18px;
+}
+.crew-radio input {
+    margin-right: 10px;
+
+    background-color: grey;
 }
