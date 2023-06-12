@@ -281,14 +281,26 @@ a {
     background-repeat: no-repeat;
 }
 
-.title-crew {
-    font-size: .5rem;
+.title-crew  {
+    font-size: .8rem;
 
     font-family: Roboto-Light;
 }
 
+.conteiner {
+    display: flex;
+
+    overflow: hidden;
+}
+.conteiner img {
+    width: 470px;
+
+    position: absolute;
+
+}
+
 .crew-conteiner {
-    width: 900px;
+    width: 800px;
     height: 600px;
 
     padding: 70px 155px;
@@ -297,6 +309,10 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.crew-conteiner-info {
+    display: flex;
 }
 
 .crew-information {
