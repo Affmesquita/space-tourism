@@ -33,78 +33,85 @@
 
             <div class="planet-destination">
 
-                <img src="image/destination/image-moon.png" alt="planeta" id="moon">
-                <img src="image/destination/image-mars.png" alt="planeta" class="hide" id="mars">
-                <img src="image/destination/image-europa.png" alt="planeta" class="hide" id="europa">
-                <img src="image/destination/image-titan.png" alt="planeta" class="hide" id="titan">
+                <div class="destination-list">
+                    <button id="moon" onclick="showBox(0)">MOON</button>
+                    <button id="mars" onclick="showBox(1)">MARS</button>
+                    <button id="europa" onclick="showBox(2)">EUROPA</button>
+                    <button id="titan" onclick="showBox(3)">TITAN</button>
+                </div>
 
                 <div class="descrition-conteiner">  
 
-                    <div class="destination-list">
-                        <button id="moon">MOON</button>
-                        <button id="mars">MARS</button>
-                        <button id="europa">EUROPA</button>
-                        <button id="titan">TITAN</button>
-                    </div>
+                    <div class="conteiner-slide-descrition">
 
-                    <div class="conteiner-slide-descrition" onclick="showHide()">
-
-                        <div class="slide-descrition first" id="slide-1">
-                            <h1>MOON</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="travel-item-conteiner">
-                                <div class="distance">
-                                    <h2>AVG DISTANCE</h2>
-                                    <p>225 MIL. KM</p>
-                                </div>
-                                <div class="time">
-                                    <h2>EST. TRAVEL TIME</h2>
-                                    <P>9 MONTHS</P>
+                        <div class="slide-descrition" id="slide-1">
+                            <img src="image/destination/image-moon.png" alt="planeta" class="img-destination" id="moon">
+                            <div class="descrition">
+                                <h1>MOON</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="travel-item-conteiner">
+                                    <div class="distance">
+                                        <h2>AVG DISTANCE</h2>
+                                        <p>225 MIL. KM</p>
+                                    </div>
+                                    <div class="time">
+                                        <h2>EST. TRAVEL TIME</h2>
+                                        <P>9 MONTHS</P>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="slide-descrition hide" id="slide-2">
-                            <h1>MARS</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="travel-item-conteiner">
-                                <div class="distance">
-                                    <h2>AVG DISTANCE</h2>
-                                    <p>225 MIL. KM</p>
-                                </div>
-                                <div class="time">
-                                    <h2>EST. TRAVEL TIME</h2>
-                                    <P>9 MONTHS</P>
+                            <img src="image/destination/image-mars.png" alt="planeta" id="mars">
+                            <div class="descrition">
+                                <h1>MARS</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="travel-item-conteiner">
+                                    <div class="distance">
+                                        <h2>AVG DISTANCE</h2>
+                                        <p>225 MIL. KM</p>
+                                    </div>
+                                    <div class="time">
+                                        <h2>EST. TRAVEL TIME</h2>
+                                        <P>9 MONTHS</P>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-
+                        
                         <div class="slide-descrition hide" id="slide-3">
-                            <h1>EUROPA</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="travel-item-conteiner">
-                                <div class="distance">
-                                    <h2>AVG DISTANCE</h2>
-                                    <p>225 MIL. KM</p>
-                                </div>
-                                <div class="time">
-                                    <h2>EST. TRAVEL TIME</h2>
-                                    <P>9 MONTHS</P>
+                            <img src="image/destination/image-europa.png" alt="planeta" id="europa">        
+                            <div class="descrition">
+                                <h1>EUROPA</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="travel-item-conteiner">
+                                    <div class="distance">
+                                        <h2>AVG DISTANCE</h2>
+                                        <p>225 MIL. KM</p>
+                                    </div>
+                                    <div class="time">
+                                        <h2>EST. TRAVEL TIME</h2>
+                                        <P>9 MONTHS</P>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="slide-descrition hide" id="slide-4">
-                            <h1>TITAN</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                            <div class="travel-item-conteiner">
-                                <div class="distance">
-                                    <h2>AVG DISTANCE</h2>
-                                    <p>225 MIL. KM</p>
-                                </div>
-                                <div class="time">
-                                    <h2>EST. TRAVEL TIME</h2>
-                                    <P>9 MONTHS</P>
+                            <img src="image/destination/image-titan.png" alt="planeta" id="titan">
+                            <div class="descrition">
+                                <h1>TITAN</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo sequi. Magni at commodi dolorum libero deserunt sit eveniet, dolores a quae iste neque. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <div class="travel-item-conteiner">
+                                    <div class="distance">
+                                        <h2>AVG DISTANCE</h2>
+                                        <p>225 MIL. KM</p>
+                                    </div>
+                                    <div class="time">
+                                        <h2>EST. TRAVEL TIME</h2>
+                                        <P>9 MONTHS</P>
+                                    </div>
                                 </div>
                             </div>
                         </div>
