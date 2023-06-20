@@ -50,6 +50,13 @@ a {
 .hide {
     display: none;
 }
+.num-color {
+    color: grey;
+}
+.title  {
+    font-family: Roboto-Light;
+}
+
 
 .nav {
     width: 100vw;
@@ -159,7 +166,7 @@ a {
 
 .main-destination {
     width: 100vw;
-    height: 100%;
+    height: 100vh;
 
     color: white;
 
@@ -174,104 +181,98 @@ a {
     padding: 70px 155px;
 }
 
-.title-destination {
-    font-size: .5rem;
+.destination-conteiner {
+    width: 1000px;
+    height: 600px;
 
-    font-family: Roboto-Light;
-}
-.title-destination h1 {
+    margin: auto;
+    margin-top: 60px;
+
+} 
+
+.destination-title {
     font-size: 1.5rem;
-}
-.num-color {
-    color: grey;
-}
+    font-weight: bolder;
 
-.planet-destination {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-
-.planet-destination img {
-    width: 350px;
-    height: 350px;
-
-    margin-top: 70px;
-    margin-left: 100px;
-}
-
-.descrition-conteiner {
-    width: 100%;
-    height: 100;
-
-    display: flex;
-    flex-direction: column;
-
-}
-.conteiner-slide-descrition {
-    height: 100vh;
+    margin-bottom: 40px;
 }
 
 .destination-list {
-    display: flex;
-    justify-content: flex-end;
+    float: right;
 
-    margin: 30px 0px 0px 0px;
+    margin-right: 135px;
 }
-
-.destination-list button {
-    padding: 10px 0px;
-
-    background-color: transparent;
+.destination-list button{
     color: white;
-    border: none;
-
-    font-family: Roboto-Light;
-
-    margin-right: 20px;
 
     font-size: 15px;
+    font-family: Roboto-Light;
+    text-align: center;
 
-    cursor: pointer;
+    margin: 0px 10px;
+
+    padding: 10px 0px;
+    border: none;
+
+    background-color: transparent;
+    
 }
 .destination-list button:hover {
     border-bottom: 2px solid white;
 }
 
+.destination-cards {
+    width: 100%;
+
+    margin-top: 50px;
+}
 
 .slide-descrition {
-    width: 100vw;
-    height: 100vh;
-
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
-    font-family: Roboto-Light;
+    overflow: hidden;
 }
-.slide-descrition h1 {
+.slide-descrition img {
+    width: 350px;
+    height: 350px;
+
+    margin: 0px 50px;
+}
+
+.descrition-txt {
+    width: 400px;
+}
+.descrition-txt h1 {
     font-size: 5rem;
 
-    margin-left: 10px;
-    padding: 30px 5px;
+    font-family: Lora;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
+.descrition-txt p {
+    letter-spacing: 1px;
+    font-size: 20px;
+
+    font-family: Roboto-Light;  
+
+    margin-bottom: 30px;
 }
 
-.travel-item-conteiner {
-    display: flex; 
+.planet-distance {
+    display: flex;
 
-    border-top: 1px solid rgba(255, 255, 255, 0.158);
     margin-top: 20px;
-
-    padding-top: 20px;
 }
-.travel-item-conteiner h2 {
-    font-size: .5rem;
-    margin-bottom: 5px;
+.planet-distance h2 {
+    font-size: 10px;
 }
 .distance {
-    margin-right: 50px;
-}
+    margin-right: 40px;
 
+    font-family: RobotoSlab-Light;
+}
 
 
 /*** CREW  ***/
@@ -290,12 +291,6 @@ a {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-.title-crew  {
-    font-size: .8rem;
-
-    font-family: Roboto-Light;
 }
 
 .conteiner {
