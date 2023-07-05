@@ -1,25 +1,11 @@
-function changeContent(textId, imageId) {
-    // Hide all text and image elements
-    var textElements = document.querySelectorAll(".crew-information > h1 h2 p");
-    var imageElements = document.querySelectorAll(".crew-img > img");
-    
-    textElements.forEach(function(element) {
-        element.style.display = "none";
-    });
-    
-    imageElements.forEach(function(element) {
-        element.style.display = "none";
-    });
-    
-    // Show selected text and image elements
-    var selectedTextElement = document.getElementById(textId);
-    var selectedImageElement = document.getElementById(imageId);
-    
-    if (selectedTextElement) {
-        selectedTextElement.style.display = "block";
+function changeDiv(opcao) {
+      // Esconder todas as divs
+      var divs = document.getElementsByClassName("hide");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].style.display = "none";
+      }
+
+      // Mostrar a div selecionada
+      var divSelecionada = document.getElementById("div" + opcao);
+      divSelecionada.style.display = "block";
     }
-    
-    if (selectedImageElement) {
-        selectedImageElement.style.display = "block";
-    }
-}

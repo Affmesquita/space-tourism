@@ -5,7 +5,16 @@
     <button id="titan" onclick="showBox(3)">TITAN</button>
 </div>
 
+CREW 
 
+<div class="crew-radio">
+
+    <input type="radio" name="crew-radio-input" id="radio-1" onclick="changeContent()" checked>
+    <input type="radio" name="crew-radio-input" id="radio-2" onclick="changeContent()">
+    <input type="radio" name="crew-radio-input" id="radio-3" onclick="changeContent()">
+    <input type="radio" name="crew-radio-input" id="radio-4" onclick="changeContent()">
+
+</div>
 
 
 
@@ -97,5 +106,35 @@ function changeContent(){
         <h1>DOUGLAS HURLEY</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quisquam optio atque. Enim, dolorem iure temporibus nobis deleniti rem culpa consequatur mollitia..</p></>
         crewImg.setAttribute('src', 'image-douglas-hurley.png')
+    }
+}
+
+
+
+
+
+function changeContent(textId, imageId) {
+    // Hide all text and image elements
+    var textElements = document.querySelectorAll(".crew-information > h1 h2 p");
+    var imageElements = document.querySelectorAll(".crew-img > img");
+    
+    textElements.forEach(function(element) {
+        element.style.display = "none";
+    });
+    
+    imageElements.forEach(function(element) {
+        element.style.display = "none";
+    });
+    
+    // Show selected text and image elements
+    var selectedTextElement = document.getElementById(textId);
+    var selectedImageElement = document.getElementById(imageId);
+    
+    if (selectedTextElement) {
+        selectedTextElement.style.display = "block";
+    }
+    
+    if (selectedImageElement) {
+        selectedImageElement.style.display = "block";
     }
 }

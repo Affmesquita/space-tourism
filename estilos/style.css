@@ -46,15 +46,13 @@
 a {
     color: white;
 }
-
-.hide {
-    display: none;
-}
 .num-color {
     color: grey;
 }
 .title  {
     font-family: Roboto-Light;
+
+    margin-bottom: 100px;
 }
 
 
@@ -67,9 +65,9 @@ a {
     align-items: center;
 }
 .nav > p {
-    position: absolute;
+    position: relative;
 
-    left: 155px;
+    left: 50px;
 
     color: rgb(68, 68, 68);
 
@@ -284,7 +282,7 @@ a {
 
 .main-crew {
     width: 100vw;
-    height: 100vh;
+    height: 700px;
 
     color: white;
 
@@ -297,20 +295,20 @@ a {
 }
 
 .conteiner {
+    width: 100%;
+
     display: flex;
 
     overflow: hidden;
 }
 .conteiner img {
-    width: 470px;
-
-    position: absolute;
+    width: 450px;
 
 }
 
 .crew-conteiner {
-    width: 800px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
 
     padding: 70px 155px;
 
@@ -321,11 +319,15 @@ a {
 }
 
 .crew-conteiner-info {
+    width: 100%;
+
     display: flex;
+    justify-content: space-between;
 }
 
 .crew-information {
-    height: 250px;
+    width: 600px;
+    height: 300px;
 
     display: flex;
     flex-direction: column;
@@ -338,6 +340,8 @@ a {
 
     font-family: Lora;
     font-weight: lighter;
+
+    margin-bottom: 30px;
 }
 .crew-information h2 {
     font-size: 1.5rem;
@@ -355,6 +359,8 @@ a {
 }
 .crew-radio input {
     margin-right: 10px;
+}
 
-    background-color: grey;
+.hide {
+    display: none;
 }

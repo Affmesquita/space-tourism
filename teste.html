@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de Mudança de Div</title>
+  <style>
+    .escondido {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Escolha uma opção:</h1>
+  <input type="radio" name="opcao" onclick="mudarDiv(1)"> Opção 1
+  <input type="radio" name="opcao" onclick="mudarDiv(2)"> Opção 2
+  <input type="radio" name="opcao" onclick="mudarDiv(3)"> Opção 3
+
+  <div id="div1" class="escondido">
+    <h1>Título da Div 1</h1>
+    <h2>Subtítulo da Div 1</h2>
+    <p>Texto da Div 1</p>
+    <img src="caminho/para/imagem1.jpg" alt="Imagem 1">
+  </div>
+
+  <div id="div2" class="escondido">
+    <h1>Título da Div 2</h1>
+    <h2>Subtítulo da Div 2</h2>
+    <p>Texto da Div 2</p>
+    <img src="caminho/para/imagem2.jpg" alt="Imagem 2">
+  </div>
+
+  <div id="div3" class="escondido">
+    <h1>Título da Div 3</h1>
+    <h2>Subtítulo da Div 3</h2>
+    <p>Texto da Div 3</p>
+    <img src="caminho/para/imagem3.jpg" alt="Imagem 3">
+  </div>
+
+  <script>
+    function mudarDiv(opcao) {
+      // Esconder todas as divs
+      var divs = document.getElementsByClassName("escondido");
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].style.display = "none";
+      }
+
+      // Mostrar a div selecionada
+      var divSelecionada = document.getElementById("div" + opcao);
+      divSelecionada.style.display = "block";
+    }
+  </script>
+</body>
+</html>
