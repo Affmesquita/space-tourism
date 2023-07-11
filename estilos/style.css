@@ -51,9 +51,19 @@ a {
 }
 .title  {
     font-family: Roboto-Light;
-
-    margin-bottom: 50px;
+    font-size: 1rem;
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
+.title-class {
+    font-size: 1.5rem;
+    font-weight: bolder;
+
+    margin-top: 50px;
+    margin-left: 110px;
+    margin-bottom: 20px;
+}
+
 
 
 .nav {
@@ -165,7 +175,7 @@ a {
 
 .main-destination {
     width: 100vw;
-    height: 100vh;
+    height: 700px;
 
     color: white;
 
@@ -188,13 +198,6 @@ a {
     margin-top: 60px;
 
 } 
-
-.destination-title {
-    font-size: 1.5rem;
-    font-weight: bolder;
-
-    margin-bottom: 40px;
-}
 
 .destination-list {
     float: right;
@@ -222,7 +225,7 @@ a {
 
 .destination-cards {
     width: 100%;
-    height: 100%;
+    height: 400px;
 
     margin-top: 50px;
 
@@ -246,6 +249,7 @@ a {
 }
 .sl-conteiner {
     width: 100%;
+    height: 700px;
 
     display: flex;
     justify-content: space-between;
@@ -330,9 +334,8 @@ a {
 }
 
 .crew-conteiner-info {
-    width: 100%;
-
-    height: 500px;
+    width: 1000px;
+    height: 413px;
 
     display: flex;
     justify-content: space-between;
@@ -340,7 +343,7 @@ a {
 
 .sl-conteiner-crew {
     width: 100%;
-    height: 500px;
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -348,7 +351,6 @@ a {
 }
 .sl-conteiner-crew img{
     width: 300px;
-
 }
 
 .crew-information {
@@ -388,8 +390,21 @@ a {
 }
 
 
+/*TECHNOLOGY*/
 
 
+.main-technology {
+    width: 100vw;
+    height: 700px;
+
+    color: white;
+
+    padding-top: 30px;
+
+    background-image: url(/image/technology/background-technology-desktop.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
 
 .hide {
     display: none;
