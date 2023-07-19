@@ -1,0 +1,35 @@
+html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Alternar Div com Inputs Radio</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Alternar Div com Inputs Radio</h1>
+  
+  <input type="radio" name="alternar" checked onclick="mostrarDiv(1)"> Opção 1
+  <input type="radio" name="alternar" onclick="mostrarDiv(2)"> Opção 2
+  <input type="radio" name="alternar" onclick="mostrarDiv(3)"> Opção 3
+  <input type="radio" name="alternar" onclick="mostrarDiv(4)"> Opção 4
+  
+  <div id="div1">Div 1 - Texto e imagem da opção 1</div>
+  <div id="div2" class="hidden">Div 2 - Texto e imagem da opção 2</div>
+  <div id="div3" class="hidden">Div 3 - Texto e imagem da opção 3</div>
+  <div id="div4" class="hidden">Div 4 - Texto e imagem da opção 4</div>
+  
+  <script>
+    function mostrarDiv(opcao) {
+      var divs = document.querySelectorAll('div[id^="div"]');
+      for (var i = 0; i < divs.length; i++) {
+        divs[i].classList.add('hidden');
+      }
+      document.getElementById('div' + opcao).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
