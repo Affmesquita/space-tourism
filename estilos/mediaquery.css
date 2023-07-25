@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+@media (max-width: 768px) {
+
+    .nav{
+        
+    }
+    .nav-list > li {
+        width: 120px;
+
+        padding: 0px;
+        margin: 0px 5px;
+
+        display: flex;
+
+    }
+    .conteiner-text-explore {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text {
+        align-items: center;
+    }
+
+}
