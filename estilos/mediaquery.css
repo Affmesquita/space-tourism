@@ -3,7 +3,11 @@
 @media (max-width: 768px) {
 
     .main {
+        height: 800px;
+
         padding-top: 0px;
+
+        background-image: url(/image/home/background-home-tablet.jpg);
     }
     .nav p {
         display: none;
@@ -46,6 +50,8 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
+    
 
 
 
